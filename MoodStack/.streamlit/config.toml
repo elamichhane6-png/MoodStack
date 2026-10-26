@@ -1,0 +1,16 @@
+[theme]
+# Sets baseline look to light mode
+base = "light"
+
+# Sets primary color accents
+primaryColor = "#2b7a78"
+
+# Sets general application background
+backgroundColor = "#f1fdfc"
+
+# Sets color for input items
+secondaryBackgroundColor = "#c2f1ef"
+
+[theme.sidebar]
+# Sets a separate background color just for the sidebar
+backgroundColor = "#c9a367"
