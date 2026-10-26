@@ -27,8 +27,9 @@ st.subheader(selected_month.strftime("%B %Y"))
 for entry_date, entry in sorted(st.session_state.entries.items(), reverse=True):
     if entry_date.month == selected_month.month and entry_date.year == selected_month.year:
         with st.container(border=True):
-            st.write(entry_date.strftime("%B %d, %Y"))
-            st.write(f"Mood: {entry['mood_level']} {entry['mood_type']}")
+            st.write(f"**{entry_date.strftime('%B %d, %Y')}**")
+            st.write(f"Mood Level: {entry['mood_level']}")
+            st.write(f"Mood Type: {entry['mood_type']}")
             st.write("Journal Entry:")
             st.write(entry["journal"])
         count = count + 1 # Count increases when a entry is found
